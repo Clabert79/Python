@@ -35,6 +35,18 @@ print(t)
 t = ['a', 'b', 'c', 'd', 'e', 'f']
 del t[1:4]
 print(t)
+frase = "profonda nostalgia dei fiordi"
+list_frase = frase.split()
+print(list_frase) 
+delimita = "-"
+frase2 = delimita.join(list_frase) 
+print(frase2)
+list_frase = frase2.split(delimita)
+print(list_frase)
+delimita = " " 
+print(delimita.join(list_frase))
+
+
 
 
 	
