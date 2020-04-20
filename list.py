@@ -1,4 +1,3 @@
-
 selfish = '01234567890'
 print(selfish[0:11])
 print(selfish[0:11:2])
@@ -8,9 +7,9 @@ print(selfish[::-1])
 print("*************************")
 
 mylist = ['ciao' , 100, 33, 'ciao2'] #puo' contenere tutti i tipi di dati
-print( str(mylist.index(100)) + " > " + str(mylist.index('ciao')))
+# print( str(mylist.index(100)) + " > " + str(mylist.index('ciao')))
 
-print(mylist[0:2])
+# print(mylist[0:2])
 
 print('ciao' in mylist)
 
@@ -39,8 +38,6 @@ print(mylist)
 a,b,c,d = [1,2,3,4] #devono essere lo stesso numero
 print(a)
 
-r1 = range(6);
-print(r1)
 
 r2 = range(3, 19, 2)
 print(r2)
