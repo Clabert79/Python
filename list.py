@@ -22,7 +22,7 @@ print(mylist)
 mylist.append(5)
 print(mylist)
 
-mylist.sort()
+# mylist.sort()
 print(mylist)
 
 mylist.extend([9,10,12])
