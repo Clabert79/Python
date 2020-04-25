@@ -117,3 +117,35 @@ for v in d_com_9.values():
 for item in d_com_9.items():
 	print(item)
 
+d_com_1a = dict(a=1,b=2,c=3)
+for k1 in d_com_1a.keys():
+	print(k1)
+d_com_1b = dict(d=4,e=5)
+# d_com_1b.keys() & d_com_1b.keys()
+
+from collections import OrderedDict
+
+#does not order the elements for you, it preserves the order you give it.
+d_ord_1 = OrderedDict()
+d_ord_1[33]= 'trentatre'
+d_ord_1[22]= 'ventidue'
+d_ord_1[24]='ventiquattro'
+
+print(d_ord_1)
+
+mydict = {'b':2,'a':1,'d':3,'c':4}
+
+orddict = OrderedDict(mydict)
+
+print(mydict)
+print(orddict)
+sort_dic = sorted(mydict.items())
+print(sort_dic)
+print(orddict)
+
+mydict.popitem()
+orddict.popitem(True)
+
+print(mydict)
+print(orddict)
+
