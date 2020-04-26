@@ -121,7 +121,7 @@ d_com_1a = dict(a=1,b=2,c=3)
 for k1 in d_com_1a.keys():
 	print(k1)
 d_com_1b = dict(d=4,e=5)
-# d_com_1b.keys() & d_com_1b.keys()
+d_com_1b.keys() & d_com_1b.keys()
 
 from collections import OrderedDict
 

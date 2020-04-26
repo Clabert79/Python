@@ -1,9 +1,6 @@
-<<<<<<< HEAD
+
 
 import copy 
-
-=======
->>>>>>> 47788b1a30b1a2f99fc8a73f67f951e5afd2bb5d
 selfish = '01234567890'
 print(selfish[0:len(selfish)])
 print(selfish[:])
@@ -35,13 +32,27 @@ mylist = ['ciao' , 100, 33, 'ciao2'] #puo' contenere tutti i tipi di dati
 print('ciao' in mylist)
 
 mylist.reverse()
+
+print("------------------------------------------>")
 print(mylist)
 
+#elimina l'ultimo elemeto // aggiungendo l'indice rimuove quel determinato elemento  
 mylist.pop()
 print(mylist)
-
-mylist.append(5)
+print(mylist.pop(1)) # restituisce l'ememento che verrà eliminato
 print(mylist)
+print(mylist.remove('ciao2')) # restituisce none e deve essere inserito l'elemento corretto che vogliamo cancellare
+print(mylist)
+
+print("------------------------------------------>")
+
+append_list = mylist.append(5)
+print(append_list)
+print(mylist)
+#insert inserisce dove vuoi l'oggetto nella lista
+append_list = mylist.insert(2,'Pluttooo')
+print(append_list)
+
 
 # mylist.sort()
 print(mylist)
