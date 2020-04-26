@@ -66,6 +66,8 @@ print((mylist + ['python']) * 3)
 #le liste sono oggetti mutabili
 mylist[2] = 77
 print(mylist)
+mylist.clear()
+print(mylist)
 
 a,b,c,d = [1,2,3,4] #devono essere lo stesso numero
 print(a)
