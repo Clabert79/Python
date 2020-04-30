@@ -1,5 +1,3 @@
-
-
 import copy 
 selfish = '01234567890'
 print(selfish[0:len(selfish)])
@@ -34,11 +32,12 @@ print('ciao' in mylist)
 mylist.reverse()
 
 print("------------------------------------------>")
-print(mylist)
+# print(mylist)
 
 #elimina l'ultimo elemeto // aggiungendo l'indice rimuove quel determinato elemento  
 mylist.pop()
 print(mylist)
+
 print(mylist.pop(1)) # restituisce l'ememento che verrà eliminato
 print(mylist)
 print(mylist.remove('ciao2')) # restituisce none e deve essere inserito l'elemento corretto che vogliamo cancellare
@@ -107,8 +106,3 @@ new_cart_3 = amazon_cart[:]
 new_cart_3[0] = "glum2"
 print(amazon_cart)
 print(new_cart_3)
-
-
-
-
-
