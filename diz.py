@@ -121,7 +121,7 @@ d_com_1a = dict(a=1,b=2,c=3)
 for k1 in d_com_1a.keys():
 	print(k1)
 d_com_1b = dict(d=4,e=5)
-d_com_1b.keys() & d_com_1b.keys()
+# d_com_1b.keys() & d_com_1b.keys()
 
 from collections import OrderedDict
 
@@ -148,4 +148,13 @@ orddict.popitem(True)
 
 print(mydict)
 print(orddict)
+
+user = {
+	'basket':[1,2,3],
+	'greet': 'hello',
+}
+# se non esiste la chiave crea il default
+print(user.get('age'),55)
+
+print('basket' in user)
 
