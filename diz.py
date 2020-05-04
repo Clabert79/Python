@@ -69,6 +69,7 @@ print(d_com_4)
 d_com_5 = {100:100, 'numeri':[1,2,3], 'lettere': ['a', 'b', 'c']}
 
 d_com_6 = d_com_5.copy();
+
 #stesso riferimentp
 print(d_com_5["numeri"] is d_com_6["numeri"])
 
