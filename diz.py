@@ -65,7 +65,6 @@ d_com_4 = {x: x**2 for x in [1, 2, 3, 4, 5]}
 
 print(d_com_4)
 
-
 d_com_5 = {100:100, 'numeri':[1,2,3], 'lettere': ['a', 'b', 'c']}
 
 d_com_6 = d_com_5.copy();
@@ -158,4 +157,3 @@ user = {
 print(user.get('age'),55)
 
 print('basket' in user)
-
