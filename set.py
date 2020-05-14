@@ -31,3 +31,14 @@ print({'a', 'b', 'c', 'd'} - {'a', 'c', 'e'}) # 'b' ,'d'
 #differenza simmentrica
 print({'a', 'b', 'c', 'd'} ^ {'a', 'c', 'e'}) # 'b' , 'e', 'd'
 
+s3 = {1,2,3,4,5,6,6}
+#convert to list
+l1 = list(s3)
+print(type(l1))
+print(l1)
+
+s3a = s3.copy()
+print(1 in s3)
+s3.clear()
+print(1 in s3)
+print(s3a)

@@ -11,7 +11,21 @@ def corrispondenza_totale(t1,vt2):
 
 	return False
 
-	
+
+my_tuple = (1, 2, 3, 4, 5, 6)
+# sono immutabili
+# my_tuple[1] = 'z' genera un errore
+print(my_tuple[1])
+print(5 in my_tuple)
+print(my_tuple.index(4))
+print(my_tuple.count(5))
+
+
+## x1, y1, z1, *other = (1, 2, 3, 4, 5, 6) da capire perchè non funzione
+# print(z1)
+# print(other)
+
+
 indirizzo = 'pippo@gmail.com'
 nome, dominio = indirizzo.split("@")
 print(nome + " " + dominio)
