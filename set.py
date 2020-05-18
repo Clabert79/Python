@@ -42,3 +42,19 @@ print(1 in s3)
 s3.clear()
 print(1 in s3)
 print(s3a)
+
+my_set = {1,2,3,4,5,6}
+your_set = {4,5,6,7,8,9,0}
+
+print(my_set.difference(your_set))
+my_set.discard(4)
+print(my_set)
+my_set.difference_update(your_set)
+print(my_set)
+
+tot_set = my_set.union(your_set)
+print(tot_set)
+
+my_sub_set = {2,3,4}
+print(my_sub_set.issubset(tot_set))
+print(tot_set.issuperset(my_sub_set))
