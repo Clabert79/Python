@@ -1,4 +1,7 @@
 import copy 
+import sys
+print(sys.version)
+
 selfish = '01234567890'
 print(selfish[0:len(selfish)])
 print(selfish[:])
@@ -38,7 +41,7 @@ print("------------------------------------------>")
 mylist.pop()
 print(mylist)
 
-print(mylist.pop(1)) # restituisce l'ememento che verrà eliminato
+print(mylist.pop(1)) # restituisce l'ememento che verra' eliminato
 print(mylist)
 print(mylist.remove('ciao2')) # restituisce none e deve essere inserito l'elemento corretto che vogliamo cancellare
 print(mylist)
@@ -65,7 +68,7 @@ print((mylist + ['python']) * 3)
 #le liste sono oggetti mutabili
 mylist[2] = 77
 print(mylist)
-mylist.clear()
+## mylist.clear()
 print(mylist)
 
 a,b,c,d = [1,2,3,4] #devono essere lo stesso numero
@@ -106,3 +109,49 @@ new_cart_3 = amazon_cart[:]
 new_cart_3[0] = "glum2"
 print(amazon_cart)
 print(new_cart_3)
+
+
+# metodo classico
+quadrati_1 = []
+for n in range(10):
+	quadrati_1.append(n**2)
+
+print(quadrati_1)
+
+# List Comprehensions
+quadrati_2 = [n**2 for n in range(10)]
+print(quadrati_2)
+
+lista1 = [1, 2, 3]
+lista2 = [3, 1, 4]
+# metodo classico
+mix_1 = []
+
+for x in lista1:
+	for y in lista2:
+		if x!= y:
+			mix_1.append((x,y))
+print(mix_1)
+
+mix_2 = []
+mix_2 =[(x,y) for x in lista1 for y in lista2 if x != y]
+
+print(mix_2)
+
+stringht = [str(n) for n in lista1]
+
+matrix = [[1,2,3],[4,5,6]]
+transpose = [[row[i] for row in matrix] for i in range(3)]
+print(transpose)
+
+lista3 = [1, 2, 3, ['a', 'b']]
+
+lista4 = lista3.copy() # Copia shallow solo i riferimenti non i valori
+print(lista3 is lista4)
+
+lista5 = copy.deepcopy(lista3)
+print(lista3 is lista5)
+
+# aggiunge gli elementi di un oggetto iterabile ad una lista
+lista5.extend({4,5})
+print(lista5)
