@@ -155,3 +155,37 @@ print(lista3 is lista5)
 # aggiunge gli elementi di un oggetto iterabile ad una lista
 lista5.extend({4,5})
 print(lista5)
+
+import itertools
+lista6 = list(itertools.chain.from_iterable([[1,2,3],['a','b','c']]))
+print(lista6)
+
+#metodo alternativo
+lista7 = []
+for lst in [[1,2,3],['a','b','c','a']]:
+	lista7 += lst
+print(lista7)
+
+# restituisce l'indice dell'elemento
+
+print(lista7.index('a'))
+
+# da che indice partire per la ricerca
+print(lista7.index('a', 4))
+# numero di occorenze
+print(lista7.count('a'))
+
+# inverte l'ordine della lista
+lista7.reverse() # non restituisce nulla ma inverte l'ordine
+print(lista7)
+
+lista8 =[3,2,4,8,5,9,6,-2]
+lista8.sort()
+print(lista8)
+
+lista8.sort(reverse=True)
+print(lista8)
+
+lista8.sort(key=abs)
+print(lista8)
+

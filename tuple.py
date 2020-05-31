@@ -1,3 +1,4 @@
+
 def min_max(t):
 	return min(t), max(t)
 def stampa_tutti(*args):
@@ -57,3 +58,12 @@ for indice, elemento in enumerate('ABCD'):
 
 diz1 = dict(zip('abcd',range(4)))
 print(diz1)
+
+
+
+from collections import namedtuple
+Point = namedtuple('MyPoint', ['x', 'y', 'z'])
+p = Point(10, 20, 30)
+print(p)
+print(p._fields)
+print(p.x, p.z, p.y)
