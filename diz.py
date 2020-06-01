@@ -67,7 +67,7 @@ print(d_com_4)
 
 d_com_5 = {100:100, 'numeri':[1,2,3], 'lettere': ['a', 'b', 'c']}
 
-d_com_6 = d_com_5.copy();
+d_com_6 = d_com_5.copy()
 
 #stesso riferimentp
 print(d_com_5["numeri"] is d_com_6["numeri"])
@@ -152,8 +152,22 @@ print(orddict)
 user = {
 	'basket':[1,2,3],
 	'greet': 'hello',
+	'name': 'pippo'
 }
 # se non esiste la chiave crea il default
 print(user.get('age'),55)
 
-print('basket' in user)
+#print('basket' in user)
+
+
+print('Items ...')
+for key, value in user.items():
+	print("Key: " + str(key) + " Value: " + str(value) )
+
+print('Values ...')
+for val in user.values():
+	print(val)
+
+print('Keys ...')
+for k in user.keys():
+	print(k)

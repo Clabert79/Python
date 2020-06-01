@@ -31,3 +31,30 @@ print({'a', 'b', 'c', 'd'} - {'a', 'c', 'e'}) # 'b' ,'d'
 #differenza simmentrica
 print({'a', 'b', 'c', 'd'} ^ {'a', 'c', 'e'}) # 'b' , 'e', 'd'
 
+s3 = {1,2,3,4,5,6,6}
+#convert to list
+l1 = list(s3)
+print(type(l1))
+print(l1)
+
+s3a = s3.copy()
+print(1 in s3)
+s3.clear()
+print(1 in s3)
+print(s3a)
+
+my_set = {1,2,3,4,5,6}
+your_set = {4,5,6,7,8,9,0}
+
+print(my_set.difference(your_set))
+my_set.discard(4)
+print(my_set)
+my_set.difference_update(your_set)
+print(my_set)
+
+tot_set = my_set.union(your_set)
+print(tot_set)
+
+my_sub_set = {2,3,4}
+print(my_sub_set.issubset(tot_set))
+print(tot_set.issuperset(my_sub_set))

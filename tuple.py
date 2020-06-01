@@ -1,3 +1,4 @@
+
 def min_max(t):
 	return min(t), max(t)
 def stampa_tutti(*args):
@@ -11,7 +12,21 @@ def corrispondenza_totale(t1,vt2):
 
 	return False
 
-	
+
+my_tuple = (1, 2, 3, 4, 5, 6)
+# sono immutabili
+# my_tuple[1] = 'z' genera un errore
+print(my_tuple[1])
+print(5 in my_tuple)
+print(my_tuple.index(4))
+print(my_tuple.count(5))
+
+
+## x1, y1, z1, *other = (1, 2, 3, 4, 5, 6) da capire perchè non funzione
+# print(z1)
+# print(other)
+
+
 indirizzo = 'pippo@gmail.com'
 nome, dominio = indirizzo.split("@")
 print(nome + " " + dominio)
@@ -43,3 +58,12 @@ for indice, elemento in enumerate('ABCD'):
 
 diz1 = dict(zip('abcd',range(4)))
 print(diz1)
+
+
+
+from collections import namedtuple
+Point = namedtuple('MyPoint', ['x', 'y', 'z'])
+p = Point(10, 20, 30)
+print(p)
+print(p._fields)
+print(p.x, p.z, p.y)
