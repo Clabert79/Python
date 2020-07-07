@@ -1,5 +1,18 @@
 # import antigravity
 
+# *args(tutti i parametri in ingresso)  **kwargs(chiave velore)
+
+def super_func(*args, **kwargs):
+	print(args)
+	print(kwargs)
+	total = 0
+	for item in kwargs.values():
+		total += item
+	return sum(args)
+
+print(super_func(1,3,4,5,6, num1 = 7,num2 = 8))
+print("----------------------")
+
 my_list = (1,2,3,4,5,6,7)
 for item  in my_list:
 	# nel caso si verifichi la condizione non esegue il codice seguente
