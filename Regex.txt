@@ -97,6 +97,13 @@ d 			--> \d intende numeric
 "?<=http:\/\/)[\w]+[\w.]+[\w]+" cerca espressioni che siano precedute da http:// e che inizino per wwww
 "\b\w+(?<!o)\b" espressioni che non finiscano per "o"	
 
+"\b(?=\w{8}\b)\w{1,4}tex\w*" tutte le parole di 8 lettere che contengano la sotto stringa tex ma che non sia ne all'inizio ne alla fine senza l' il '*' finale non prende tutte le parole
+"\b" fissa l'inizio
+"(?=\w{8}\b)" che la parola sia di 8 caratteri sia numerici che letterali
+w{1,4} ci possono essere davati 4 caratteri generici
+tex >> il valore che mi interessa trovare
+\w* prende tutti i caratteri finali
+
 
 
 
