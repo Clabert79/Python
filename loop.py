@@ -1,5 +1,39 @@
 # import antigravity
 
+# *args(tutti i parametri in ingresso)  **kwargs(chiave velore)
+
+def super_func(*args, **kwargs):
+	print(args)
+	print(kwargs)
+	total = 0
+	for item in kwargs.values():
+		total += item
+	return sum(args)
+
+print(super_func(1,3,4,5,6, num1 = 7,num2 = 8))
+print("----------------------")
+
+my_list = (1,2,3,4,5,6,7)
+for item  in my_list:
+	# nel caso si verifichi la condizione non esegue il codice seguente
+	if(item == 2):
+		continue
+	# esce dal looop
+	if(item == 6):
+		break
+
+	print(item)
+
+print("----------------------")
+
+for item  in my_list:
+	if(item == 2):
+		continue
+	if(item == 6):
+		break
+
+	print(item)
+
 for number in range(0 , 100):
 	print(number)
 for _ in range(0, 10, 2):
@@ -12,6 +46,9 @@ for i,char in enumerate(list(range(49,55))):
 	if char == 50:
 		print(f'index of range is {i}')
 
+for i, char in enumerate('hello'):
+	print(str(i) + ' - ' + char)
+
 i = 0
 while i < 20:
 	print(i)
@@ -21,14 +58,8 @@ while i < 20:
 else:
 	print('done with all the work') # viene stampato solo se vengono eseguiti tutti i loop
 
-my_list = (1,2,3,4,5,6,7)
-for item  in my_list:
-	if(item == 2):
-		continue
-	if(item == 6):
-		break
 
-	print(item)
+
 
 i1 = 0
 while i1 < len(my_list):
