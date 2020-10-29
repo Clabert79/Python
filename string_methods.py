@@ -1,6 +1,5 @@
 import unicodedata
 import string
-from string import maketrans 
 import sys
 # --> https://www.w3schools.com/python/python_ref_string.asp
 print(sys.version_info.major)
@@ -18,7 +17,7 @@ print(s1)
 # Required to call maketrans function.
 intab = "ABC"
 outtab = "abc"
-trantab1 = maketrans(intab, outtab)
+trantab1 = str.maketrans(intab, outtab)
 
 print (s1.translate(trantab1))
 
