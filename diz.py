@@ -1,5 +1,13 @@
 import copy
 
+def lookup_inverse(d, v):
+	for k in d:
+		if d[k] == v:
+			return k
+	raise LookupError()
+
+
+
 d = {'nome':'pippo','professione':['studente','lavoratore']}
 print(d['nome'])
 print(len(d))

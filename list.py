@@ -24,7 +24,10 @@ print(".-.-.-.-.-.-.-.-.-.-.-.-.")
 for i in range(len(formaggi)):
 	print(formaggi[i])
 
+lis_a = [1,2,4,5]
+lis_b = [6,7,8,9]
 
+print(lis_a + lis_b)
 mylist = ['ciao' , 100, 33, 'ciao2'] #puo' contenere tutti i tipi di dati
 # print( str(mylist.index(100)) + " > " + str(mylist.index('ciao')))
 
@@ -55,6 +58,18 @@ print(mylist)
 append_list = mylist.insert(2,'Pluttooo')
 print(append_list)
 
+print("#######################################>")
+s = 'spam'
+t = list(s)
+print(t)
+
+s = 'profononda nostalgia dei fiordi'
+t = s.split()
+print(t)
+delimita = ' '
+s = delimita.join(t)
+print(s)
+print("#######################################>")
 
 # mylist.sort()
 print(mylist)
@@ -189,3 +204,53 @@ print(lista8)
 lista8.sort(key=abs)
 print(lista8)
 
+del lista8[0] # cancella il primo elemnto
+
+lista9 = lista8.append(11)
+
+print(lista9)
+
+lista9 = lista8 + [12] #crea un nuovo oggetto
+
+print(lista9) 
+
+lista10 = lista9[1:] #in caso di slicing viene creata una nuova lista
+
+print(lista10)
+print(lista9)
+
+print('-------------------- Funzione ZIP -----------------')
+s1 = "abc"
+list11 = ['1', '2', '3']
+
+# crea un oggetto iteratore
+zip(s1, list11)
+
+for cp in zip(s1, list11):
+	print(cp)
+
+#crea una lista di tuple
+list12 = list(zip(s1, list11))
+print(list12)
+print('-------------------- Funzione ZIP -----------------')
+
+print('-------------------- Dictionary + List -----------------')
+
+dict1 = {}
+
+dict1["key1"] = [1, 2]
+
+lst1 = ['Geeks', 'For', 'Geeks']
+
+dict1["key1"].append(lst)
+
+print(dict1) 
+
+dict2 = dict()
+lst2 = ['1', '2', '3']
+
+for val in lst2:
+	for ele in range(int(val), int(val) + 2):
+		dict2.setdefault(ele, []).append(val)
+
+print(dict2)

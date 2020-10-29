@@ -5,7 +5,7 @@ print(type(s1))
 s2 = {1, 'py', ('a','b'), 3}
 print(type(s2))
 # set un oggetto mutabile
-s0.add(4) 
+s0.add(4)
 print(s0)
 # ma gli oggetti all'interno no mutabili
 # s0.add([1,2]) NO
@@ -58,3 +58,15 @@ print(tot_set)
 my_sub_set = {2,3,4}
 print(my_sub_set.issubset(tot_set))
 print(tot_set.issuperset(my_sub_set))
+
+#Differenze con i dizionari
+def ha_dupplicati_d(t):
+    d = {}
+    for x in t:
+        if x in d:
+            return True
+        d[x] = True
+    return False
+
+def ha_dupplicati_s(t):
+    return len(set(t)) < len(t)
