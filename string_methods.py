@@ -2,7 +2,25 @@ import unicodedata
 import string
 import sys
 # --> https://www.w3schools.com/python/python_ref_string.asp
+
+print(dir(str))
+
 print(sys.version_info.major)
+
+sa = 'Example'
+print(sa.startswith('exa'))
+
+#Trasforma in maiscole tutte le lettere iniziali
+sa = 'example for string   '
+print(sa.title())
+
+#Conta il numero di orccorenze nella stringa dell'esspressione nella parentesi
+print(sa.count('r'))
+
+#elimina gli spazzi all'inizio e alla fine della frase
+print(sa.strip())
+#Converte un ogggetto in una stringa
+print(str(['a', 'b', 'c', 1, 2]))
 
 print(unicodedata.name(u'A'))
 print('\n{LATIN CAPITAL LETTER A}')
@@ -11,7 +29,7 @@ print('\n{LATIN CAPITAL LETTER A}')
 # print(dir(string))
 s1 = 'sono unA stringA, quindi Una  sequenza immutabile di caratteri'
 # numero di occorenze
-print(s1.replace('una','UNA',1)) 
+print(s1.replace('una','UNA',1))
 print(s1)
 
 # Required to call maketrans function.
@@ -48,10 +66,10 @@ print(s3)
 
 # rimuovono gli spazi
 s4 = '    Stringa con    spazzi all \' interno'
-print(s4.lstrip().strip()) 
+print(s4.lstrip().strip())
 print(s4.lstrip().rstrip())
 # elimina i caratteri che corrispondono partendo in questo caso da sinistra
-# ma ci devono essere se non non parte  
+# ma ci devono essere se non non parte
 print('cccccc pluto'.lstrip('c '))
 
 print(s4.title())
@@ -74,12 +92,12 @@ print(sys.maxunicode)
 #confronto tra string case sensitive
 s1c = 'A presto Elisabetta'
 s2c = s1c.title()
-print(s1c, s2c, s1c == s2c) 
+print(s1c, s2c, s1c == s2c)
 # non ne tiene conto del case migliore di Upper e lower
-## print(s1c, s2c, s1c.casefold() == s2c.casefold()) 
+## print(s1c, s2c, s1c.casefold() == s2c.casefold())
 
 # essendo immutabili vengono sempre restituite nuove stringhe
-# %[(chiave)][opzione][profondita'][.precisione]tipo 
+# %[(chiave)][opzione][profondita'][.precisione]tipo
 # '%s' Stringhe
 # '%d' Intero decimale con segno
 # '%i' Intero decimale con segno

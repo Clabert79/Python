@@ -1,15 +1,18 @@
 import sys
 print(sys.version)
 
-new_list =[]
-
-def multi_b2(li):
-    for item in li:
-        new_list.append(item*2)
-return new_list
+a = 11
+b = 11.10
+c = 11 + 0j
 
 
-print(multi_b2(1,3,5))
+print(a.bit_length)
+#print(b.as_integer_ratio)
+#print(c.imag)
 
-print(new_list)
+/Users/Clabert/Library/Python/3.6/bin/
 
+/usr/local/bin
+
+
+Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/

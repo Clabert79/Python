@@ -1,0 +1,11 @@
+http://www.francescoficetola.it/2012/02/29/the-zen-of-python-by-tim-peters/
+
+Beatiful is better than ugly
+Explicit is better then implicit
+Simple is better than complex
+Complex is better than complicated
+Flat is better than Complicated
+Soarse is better than dense
+Readability counts
+Soecial cases aren't enought to break the rules
+Although praticality beats purity

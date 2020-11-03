@@ -96,10 +96,10 @@ d_num_no_keys = {1:'uno', 2:'due'}
 print(d_num_no_keys.setdefault(1))
 
 #se non esiste aggiunge la chiave con valore none
-print(d_num_no_keys.setdefault(3)) 
-print(d_num_no_keys) 
+print(d_num_no_keys.setdefault(3))
+print(d_num_no_keys)
 
-print(d_num_no_keys.setdefault(4, 'quattro')) 
+print(d_num_no_keys.setdefault(4, 'quattro'))
 print(d_num_no_keys)
 
 d_com_8 = dict(nome='Python', creatore='Guido')
@@ -114,7 +114,7 @@ print(d_com_8)
 #Iterazione
 d_com_9 = {11:'undici', 22:'ventidue', 33: 'trentatre'}
 for k in d_com_9:
-	print(k) 
+	print(k)
 
 for k in sorted(d_com_9, reverse=True):
 	print(k, d_com_9[k])
@@ -179,3 +179,20 @@ for val in user.values():
 print('Keys ...')
 for k in user.keys():
 	print(k)
+
+########################
+#defaultdict
+########################
+
+from collections import defaultdict
+
+def def_value():
+	return '*'
+
+dir_d = defaultdict(def_value)
+dir_d["A"] = 1
+dir_d["B"] = 2
+
+print(dir_d["A"])
+print(dir_d["B"])
+print(dir_d["C"])
