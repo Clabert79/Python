@@ -30,6 +30,33 @@ print(list(filter(is_smart_student, scores)))
 #4 Combine all of numbers that are in a list on this file using reduce
 
 def accumulator(acc, item):
+    print(acc, item)
     return acc + item
 
 print(reduce(accumulator, (my_numbers + scores)))
+
+print("******************************************")
+
+my_list = [1,2,3]
+
+def multiply_by2(item):
+    return item*2
+
+def only_odd(item):
+    return item % 2 != 0
+
+print(reduce(accumulator, my_list, 10))
+print(my_list)
+
+print("******************************************")
+print('LAMBDA')
+print("******************************************")
+#Lambda expression
+
+# lambda param: action(param)
+
+print(list(map(lambda item: item * 2, my_list )))
+
+print(list(filter(lambda item: item % 2 !=0, my_list )))
+
+print(reduce(lambda acc, item: acc + item, my_list ))
