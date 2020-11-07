@@ -54,9 +54,28 @@ print("******************************************")
 #Lambda expression
 
 # lambda param: action(param)
-
+print('Es 1')
+print("-----------------------------------------------")
 print(list(map(lambda item: item * 2, my_list )))
 
 print(list(filter(lambda item: item % 2 !=0, my_list )))
 
 print(reduce(lambda acc, item: acc + item, my_list ))
+print("-----------------------------------------------")
+
+
+print('Es 2')
+print("-----------------------------------------------")
+my_list_1 = [5, 4, 3]
+new_list = list(map(lambda num: num**2, my_list_1))
+print(new_list)
+
+print('Es 3')
+print("-----------------------------------------------")
+
+my_list_2 = [(0, 2), (4, 3), (10, -1), (9, 9)]
+my_list_2.sort()
+print(my_list_2)
+
+my_list_2.sort(key = lambda x: x[1])
+print(my_list_2)
